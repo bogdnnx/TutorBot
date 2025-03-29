@@ -33,7 +33,7 @@ source venv/bin/activate
 pip install -r requirements.txt
 ```
 
-##⚙️ Настройка
+⚙️ Настройка
 Создайте файл .env
 ---
 ```
