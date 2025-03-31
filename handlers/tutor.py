@@ -660,13 +660,12 @@ async def minus_lesson(callback: CallbackQuery, session: AsyncSession, state: FS
                 await callback.answer("❌ Ученик не найден")
                 return
 
-            if student.balance > 0:
-                student.balance -= 1
-                await session.commit()
-                await callback.answer("✅ Занятие списано")
-                await balance_actions(callback, session, state)  # Обновляем баланс
-            else:
-                await callback.answer("⚠️ Баланс не может быть отрицательным")
+            
+            student.balance -= 1
+            await session.commit()
+            await callback.answer("✅ Занятие списано")
+            await balance_actions(callback, session, state)  # Обновляем баланс
+            
 
     except Exception as e:
         logger.error(f"Ошибка списания: {e}")
