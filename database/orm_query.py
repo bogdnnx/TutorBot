@@ -36,7 +36,7 @@ async def get_files(student_id, session:AsyncSession):
     
 async def get_students(session: AsyncSession):
     query = select(Student)
-    result  = await session.execute(query)
+    result  = await session.execute(query).order_by(Student.name)
     return result.scalars().all()
 
 
