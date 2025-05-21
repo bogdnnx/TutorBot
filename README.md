@@ -4,7 +4,7 @@ Telegram-бот для управления учебными процессам�
 
 [![Python](https://img.shields.io/badge/Python-3.9+-blue.svg)](https://python.org)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
-[![Telegram](https://img.shields.io/badge/Telegram-@TutorBot-blue.svg)](https://t.me/your_bot_link)
+[![Telegram](https://img.shields.io/badge/Telegram-@TutorBot-blue.svg)](https://t.me/tutor_Bot)
 
 ---
 
